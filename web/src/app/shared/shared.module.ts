@@ -60,7 +60,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { WorkbasketFilterComponent } from './components/workbasket-filter/workbasket-filter.component';
-import { TaskFilterComponent } from './components/task-filter/task-filter.component';
 
 const MODULES = [
   CommonModule,
@@ -101,8 +100,7 @@ const DECLARATIONS = [
   DropdownComponent,
   ToastComponent,
   DialogPopUpComponent,
-  WorkbasketFilterComponent,
-  TaskFilterComponent
+  WorkbasketFilterComponent
 ];
 
 @NgModule({

@@ -6,11 +6,8 @@ import { AlertModule, TypeaheadModule } from 'ngx-bootstrap';
 import { SharedModule } from 'app/shared/shared.module';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
-import { ClassificationTypesSelectorComponent } from 'app/administration/components/classification-types-selector/classification-types-selector.component';
-import { ClassificationCategoriesService } from 'app/shared/services/classification-categories/classification-categories.service';
-import { AccessItemsManagementComponent } from 'app/administration/components/access-items-management/access-items-management.component';
-import { MatRadioModule } from '@angular/material/radio';
 import { AdministrationRoutingModule } from './administration-routing.module';
+
 /**
  * Components
  */
@@ -24,7 +21,9 @@ import { WorkbasketAccessItemsComponent } from './components/workbasket-access-i
 import { ClassificationListComponent } from './components/classification-list/classification-list.component';
 import { ClassificationDetailsComponent } from './components/classification-details/classification-details.component';
 import { ImportExportComponent } from './components/import-export/import-export.component';
+import { ClassificationTypesSelectorComponent } from 'app/administration/components/classification-types-selector/classification-types-selector.component';
 import { AdministrationOverviewComponent } from './components/administration-overview/administration-overview.component';
+import { AccessItemsManagementComponent } from 'app/administration/components/access-items-management/access-items-management.component';
 
 import { ClassificationOverviewComponent } from './components/classification-overview/classification-overview.component';
 import { WorkbasketOverviewComponent } from './components/workbasket-overview/workbasket-overview.component';
@@ -34,6 +33,7 @@ import { WorkbasketOverviewComponent } from './components/workbasket-overview/wo
 import { ClassificationDefinitionService } from './services/classification-definition.service';
 import { WorkbasketDefinitionService } from './services/workbasket-definition.service';
 import { ImportExportService } from './services/import-export.service';
+import { ClassificationCategoriesService } from 'app/shared/services/classification-categories/classification-categories.service';
 
 /**
  * Material Design
@@ -55,6 +55,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatRadioModule } from '@angular/material/radio';
 
 const MODULES = [
   CommonModule,

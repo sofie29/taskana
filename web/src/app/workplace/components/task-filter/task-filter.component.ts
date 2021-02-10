@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { ALL_STATES, TaskState } from '../../models/task-state';
-import { TaskQueryFilterParameter } from '../../models/task-query-filter-parameter';
+import { ALL_STATES, TaskState } from '../../../shared/models/task-state';
+import { TaskQueryFilterParameter } from '../../../shared/models/task-query-filter-parameter';
 
 @Component({
   selector: 'taskana-shared-task-filter',

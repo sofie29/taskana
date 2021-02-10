@@ -7,9 +7,11 @@ import { AlertModule, TypeaheadModule } from 'ngx-bootstrap';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { SharedModule } from 'app/shared/shared.module';
-import { ClassificationCategoriesService } from 'app/shared/services/classification-categories/classification-categories.service';
 import { WorkplaceRoutingModule } from './workplace-routing.module';
 
+/**
+ * Components
+ */
 import { TaskListToolbarComponent } from './components/task-list-toolbar/task-list-toolbar.component';
 import { TaskMasterComponent } from './components/task-master/task-master.component';
 import { TaskdetailsComponent } from './components/taskdetails/taskdetails.component';
@@ -19,10 +21,19 @@ import { TaskdetailsAttributeComponent } from './components/taskdetails-attribut
 import { TaskComponent } from './components/task/task.component';
 import { GeneralFieldsExtensionComponent } from './components/taskdetails-general-fields-extension/general-fields-extension.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
+import { TaskFilterComponent } from './components/task-filter/task-filter.component';
 
+/**
+ * Services
+ */
 import { TaskService } from './services/task.service';
 import { TokenInterceptor } from './services/token-interceptor.service';
 import { WorkplaceService } from './services/workplace.service';
+import { ClassificationCategoriesService } from 'app/shared/services/classification-categories/classification-categories.service';
+
+/**
+ * Material Design
+ */
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
@@ -59,7 +70,8 @@ const DECLARATIONS = [
   TaskdetailsAttributeComponent,
   TaskComponent,
   GeneralFieldsExtensionComponent,
-  TaskListComponent
+  TaskListComponent,
+  TaskFilterComponent
 ];
 
 @NgModule({
