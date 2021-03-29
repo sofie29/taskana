@@ -16,7 +16,7 @@ import { TaskdetailsComponent } from './components/taskdetails/taskdetails.compo
 import { TaskAttributeValueComponent } from './components/task-attribute-value/task-attribute-value.component';
 import { TaskCustomFieldsComponent } from './components/task-custom-fields/task-custom-fields.component';
 import { TaskInformationComponent } from './components/task-information/task-information.component';
-import { TaskComponent } from './components/task/task.component';
+import { TaskProcessingComponent } from './components/task-processing/task-processing.component';
 import { TaskStatusDetailsComponent } from './components/task-status-details/task-status-details.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 
@@ -36,6 +36,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatTabsModule } from '@angular/material/tabs';
 
 const MODULES = [
   TypeaheadModule.forRoot(),
@@ -60,7 +61,7 @@ const DECLARATIONS = [
   TaskInformationComponent,
   TaskAttributeValueComponent,
   TaskCustomFieldsComponent,
-  TaskComponent,
+  TaskProcessingComponent,
   TaskStatusDetailsComponent,
   TaskListComponent
 ];
@@ -78,7 +79,8 @@ const DECLARATIONS = [
     MatMenuModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTabsModule
   ],
   providers: [
     TaskService,
