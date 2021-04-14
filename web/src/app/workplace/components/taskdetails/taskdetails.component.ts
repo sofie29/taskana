@@ -154,7 +154,7 @@ export class TaskdetailsComponent implements OnInit, OnDestroy {
     this.destroy$.complete();
   }
 
-  private onSave() {
+  onSave() {
     this.currentId === 'new-task' ? this.createTask() : this.updateTask();
   }
 

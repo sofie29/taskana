@@ -32,6 +32,14 @@
     color: #555;
   }
 
+  &__button-aquamarine {
+    color: $aquamarine;
+  }
+
+  &__button-red {
+    color: $invalid;
+  }
+
   &__workbasket-icon {
     width: 16px;
     height: 16px;

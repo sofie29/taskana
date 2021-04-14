@@ -1,30 +1,82 @@
 @import '../../../../theme/colors';
 
-::ng-deep .btn-block {
-  background-color: whitesmoke;
-  font-size: 16px;
-  font-weight: 700;
-}
+.task-details {
 
-::ng-deep .panel-group .panel-heading + .panel-collapse > .panel-body,
-.panel-group .panel-heading + .panel-collapse > .list-group {
-  border: none;
-}
-
-::ng-deep .collapse {
-  -webkit-transition: max-height 0.5s ease;
-  -moz-transition: max-height 0.5s ease;
-  -o-transition: max-height 0.5s ease;
-  -ms-transition: max-height 0.5s ease;
-  transition: max-height 0.5s ease;
-
-  display: block !important;
-  overflow: hidden !important;
-  visibility: visible !important;
-  max-height: 0;
-
-  &.in {
-    max-height: 2000px;
-    overflow: visible !important;
+  &__header {
+    padding: 8px 8px 0 8px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+
+  &__badge-message {
+    font-size: 1.1rem;
+    background-color: $transparent-grey;
+    border-radius: 4px;
+
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    position: relative;
+    top: 4px;
+  }
+
+  &__action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__button--primary {
+    background-color: $aquamarine;
+    color: white;
+    margin-right: 4px;
+    min-width: 1%
+  }
+
+  &__button--secondary {
+    margin-right: 4px;
+    min-width: 1%;
+    color: #555;
+  }
+
+  &__icon--aquamarine {
+    color: $aquamarine;
+  }
+
+  &__icon--red {
+    color: $invalid;
+  }
+
+  &__task-name {
+    font-size: 1.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 10;
+  }
+
+  &__tab-group-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__tab-wrapper {
+    padding: 12px;
+  }
+
+}
+
+::ng-deep .mat-tab-body-wrapper {
+  height: 100%;
+  max-height: calc(100vh - 182px);
+}
+
+::ng-deep .task-details__tab-group-wrapper > .mat-tab-group > .mat-tab-header > .mat-tab-label-container > .mat-tab-list > .mat-tab-labels > .mat-tab-label {
+  min-width: 0 !important;
+  height: 36px !important;
 }
